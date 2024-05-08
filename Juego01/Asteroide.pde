@@ -16,6 +16,8 @@ class Asteroide extends GameObject{
   this.imagen=imagen;
   }
 void display(){
+  imagen=loadImage("asteroide.gif");
+  image(imagen,posicion.x,posicion.y,120.0,120.0);
 }
 void mover(){
 }
