@@ -18,6 +18,8 @@ class Shooter extends GameObject{
   }
   
 void display(){
+  imagen=loadImage("shooter.gif");
+  image(imagen,posicion.x,posicion.y);
 }
 void mover(){
 }
