@@ -20,6 +20,7 @@ void display(){
   image(imagen,posicion.x,posicion.y,120.0,120.0);
 }
 void mover(){
+  
 }
 
 }
