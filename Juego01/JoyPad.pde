@@ -27,7 +27,7 @@ public void setLeftPressed(boolean leftPressed){
 this.leftPressed=leftPressed;
 }
 
-public boolean isrightPressed(){
+public boolean isRightPressed(){
 return rightPressed;
 } 
 

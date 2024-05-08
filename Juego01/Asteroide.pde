@@ -1,4 +1,4 @@
-class Asteroide extends GameObject{
+/*class Asteroide extends GameObject{
   private PVector posicion;
   private PImage imagen;
   
@@ -19,8 +19,8 @@ void display(){
   imagen=loadImage("asteroide.gif");
   image(imagen,posicion.x,posicion.y,120.0,120.0);
 }
-void mover(){
-  
+void mover(int direccion){
+  switch(direccion){}
 }
 
-}
+}*/

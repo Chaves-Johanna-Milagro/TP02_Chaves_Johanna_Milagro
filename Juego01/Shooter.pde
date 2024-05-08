@@ -27,7 +27,7 @@ class Shooter extends GameObject{
   
 void display(){
   imagen=loadImage("shooter.gif");
-  image(imagen,posicion.x,posicion.y,100.0,100.0);
+  image(imagen,posicion.x,posicion.y);
 }
 void mover(int direccion){
   switch(direccion){
