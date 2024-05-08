@@ -1,4 +1,4 @@
-class Joypad{
+class JoyPad{
 private boolean upPressed;
 private boolean downPressed;
 private boolean leftPressed;
@@ -30,6 +30,7 @@ this.leftPressed=leftPressed;
 public boolean isrightPressed(){
 return rightPressed;
 } 
+
 public void setRightPressed(boolean rightPressed){
 this.rightPressed=rightPressed;
 }
