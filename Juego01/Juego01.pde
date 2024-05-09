@@ -1,5 +1,5 @@
 private Shooter shooter;
-//private Asteroide asteroide;
+private Asteroide asteroide;
 private JoyPad joypad;
 
 
@@ -8,15 +8,16 @@ public void setup(){
   shooter=new Shooter();
   shooter.setPosicion(new PVector(width-350,height-150));
   shooter.setVelocidad(new PVector(5.0,5.0));
- // asteroide=new Asteroide();
-  //asteroide.setPosicion(new PVector(width/2,height/2));
+  asteroide=new Asteroide();
+  asteroide.setPosicion(new PVector(width/2,0.0));
+  asteroide.setVelocidad(new PVector(7.0,7.0));
   joypad=new JoyPad();
 }
 
 public void draw(){
    background(255);
    shooter.display();
-  // asteroide.display();
+   asteroide.display();
    if(joypad.isUpPressed()){
    shooter.mover(1);
    }
