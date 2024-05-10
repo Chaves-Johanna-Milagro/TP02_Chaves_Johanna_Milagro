@@ -11,8 +11,11 @@ public void setPosicion(PVector posicion){
 void display(){
   fill(#F07233);
   square(posicion.x,posicion.y,100.0);
-  noFill();
-  circle(posicion.x,posicion.y,40.0);
 }
+/*void puntos(){
+  for(int i=0;i<7;i++){
+  fill(0);
+  circle(random(200,400),random(200,400),40.0);
+  }*/
 
-} 
+}

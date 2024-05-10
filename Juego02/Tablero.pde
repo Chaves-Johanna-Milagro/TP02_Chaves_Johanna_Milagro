@@ -9,6 +9,9 @@ public void setPosicion(PVector posicion){
 }
 
 void display(){
+  fill(#7C80F5);
+  noStroke();
+  rect(posicion.x,posicion.y,width/2,height/2);
 
 }
 
