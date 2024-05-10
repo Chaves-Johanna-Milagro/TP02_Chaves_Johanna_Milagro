@@ -12,16 +12,28 @@ void display(int puntos){
   stroke(0);
   fill(#F07233);
   rectMode(CENTER);
-  square(posicion.x,posicion.y,100.0);
+  square(posicion.x,posicion.y,120.0);
   noFill();
   switch(puntos){
     case 1:{
       fill(0);
       circle(width/2,height/2,30);
-      break;
+      break;}
+      case 2:{
+      fill(0);
+      circle(width/2+32,height/2-32,30);
+      circle(width/2-32,height/2+32,30);
+      break;}
+      case 3:{
+      fill(0);
+      circle(width/2,height/2,30);
+      circle(width/2+32,height/2-32,30);
+      circle(width/2-32,height/2+32,30);
+      break;}
 }
 }
 }
+
 /*void punto(int puntos){
   switch(puntos){
   case 0{
@@ -32,5 +44,3 @@ void display(int puntos){
   fill(0);
   circle(random(200,400),random(200,400),40.0);
   }*/
-
-}
