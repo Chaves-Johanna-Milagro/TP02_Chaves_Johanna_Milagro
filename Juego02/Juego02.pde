@@ -8,10 +8,21 @@ public void setup(){
   dado.setPosicion(new PVector(width/2,height/2));
   tablero=new Tablero();
   tablero.setPosicion(new PVector(width/2,height/2));
+  texto=new Texto();
+  texto.setPosicion(new PVector(width/6+20,height-100));
 }
 public void draw(){
   tablero.display(1);
-  dado.display((int) random(1,6));
-  //dado.puntos();
+  texto.display(0);
 
 }
+public void keyPressed(){
+  if(key=='s'){
+    dado.display((int) random(1,7));
+  }
+}
+/*public void keyReleased(){
+  if (key=='s'){
+  dado.display((int) random(1,6));
+  }
+}*/
