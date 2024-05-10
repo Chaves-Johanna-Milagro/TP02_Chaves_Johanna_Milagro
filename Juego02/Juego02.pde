@@ -11,7 +11,7 @@ public void setup(){
 }
 public void draw(){
   tablero.display(1);
-  dado.display(3);
+  dado.display((int) random(1,6));
   //dado.puntos();
 
 }

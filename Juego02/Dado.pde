@@ -14,33 +14,41 @@ void display(int puntos){
   rectMode(CENTER);
   square(posicion.x,posicion.y,120.0);
   noFill();
+  fill(0);
   switch(puntos){
     case 1:{
-      fill(0);
       circle(width/2,height/2,30);
       break;}
-      case 2:{
-      fill(0);
+    case 2:{
       circle(width/2+32,height/2-32,30);
       circle(width/2-32,height/2+32,30);
-      break;}
-      case 3:{
-      fill(0);
+    break;}
+    case 3:{
       circle(width/2,height/2,30);
       circle(width/2+32,height/2-32,30);
       circle(width/2-32,height/2+32,30);
-      break;}
+    break;}
+    case 4:{
+      circle(width/2+32,height/2-32,30);
+      circle(width/2-32,height/2+32,30);
+      circle(width/2-32,height/2-32,30);
+      circle(width/2+32,height/2+32,30);
+    break;}
+    case 5:{
+      circle(width/2,height/2,30);
+      circle(width/2+32,height/2-32,30);
+      circle(width/2-32,height/2+32,30);
+      circle(width/2-32,height/2-32,30);
+      circle(width/2+32,height/2+32,30);
+    break;}
+    case 6:{
+      circle(width/2+32,height/2,25);
+      circle(width/2-32,height/2,25);
+      circle(width/2+32,height/2-32,25);
+      circle(width/2-32,height/2+32,25);
+      circle(width/2-32,height/2-32,25);
+      circle(width/2+32,height/2+32,25);
+    break;}
 }
 }
 }
-
-/*void punto(int puntos){
-  switch(puntos){
-  case 0{
-  this.
-  }
-  }
-  /*for(int i=0;i<7;i++){
-  fill(0);
-  circle(random(200,400),random(200,400),40.0);
-  }*/
