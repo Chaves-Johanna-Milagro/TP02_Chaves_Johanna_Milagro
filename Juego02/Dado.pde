@@ -8,12 +8,27 @@ public void setPosicion(PVector posicion){
   this.posicion=posicion;
 }
 
-void display(){
+void display(int puntos){
+  stroke(0);
   fill(#F07233);
+  rectMode(CENTER);
   square(posicion.x,posicion.y,100.0);
+  noFill();
+  switch(puntos){
+    case 1:{
+      fill(0);
+      circle(width/2,height/2,30);
+      break;
 }
-/*void puntos(){
-  for(int i=0;i<7;i++){
+}
+}
+/*void punto(int puntos){
+  switch(puntos){
+  case 0{
+  this.
+  }
+  }
+  /*for(int i=0;i<7;i++){
   fill(0);
   circle(random(200,400),random(200,400),40.0);
   }*/

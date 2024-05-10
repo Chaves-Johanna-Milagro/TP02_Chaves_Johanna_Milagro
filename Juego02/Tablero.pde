@@ -8,11 +8,13 @@ public void setPosicion(PVector posicion){
   this.posicion=posicion;
 }
 
-void display(){
+void display(int puntos){
+  if(puntos==1){
   fill(#7C80F5);
   noStroke();
-  rect(posicion.x,posicion.y,width/2,height/2);
-
+  rectMode(CENTER);
+  rect(posicion.x,posicion.y,width/1.5,height/1.5);
+  }
 }
 
 }

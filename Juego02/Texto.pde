@@ -8,7 +8,8 @@ public void setPosicion(PVector posicion){
   this.posicion=posicion;
 }
 
-void display(){
+void display(int puntos){
+  //dado.puntos(0);
 
 }
 

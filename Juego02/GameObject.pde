@@ -1,6 +1,6 @@
 abstract class GameObject{
 PVector posicion;
 
-abstract void display(); 
+abstract void display(int puntos); 
 
 } 
