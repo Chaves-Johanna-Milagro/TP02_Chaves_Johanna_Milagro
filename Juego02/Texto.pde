@@ -15,14 +15,18 @@ public void setFuente(PFont fuente){
   this.fuente=fuente;
 }
 
-void display(int puntos){
-  if(puntos==0){
+void display(){
+  //if(puntos==0){
     fill(0);
     fuente=loadFont("Minecraft-48.vlw");
     textFont(fuente);
     textSize(15);
-  text("presiona 'S' para generar otro dado",posicion.x,posicion.y);}
-
+  text("presiona 'S' para generar otro dado",posicion.x,posicion.y);
+  text("presiona 'N' para terminar",posicion.x,posicion.y+20);
 }
+//if(puntos==1){
+//text("uno",posicion.x,posicion.y);
+//}
+
 
 }
