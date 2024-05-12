@@ -1,17 +1,23 @@
 private Jugador jugador;
+private Fondo fondo;
 //private JoyPad joypad;
 public void setup(){
   size(600,600);
-  //background(255);
+  background(255);
   jugador=new Jugador();
   jugador.setPosicion(new PVector(width/2,height/2));
-  jugador.setVelocidad(new PVector(20,20));
+  jugador.setVelocidad(new PVector(50,50));
+  
+  fondo=new Fondo();
+  fondo.setPosicion(new PVector(0,height/2));
   //joypad=new JoyPad();
   
 }
 public void draw(){
-  background(255);
+   fondo.display();
+  //background(255);
   jugador.display();
+  //fondo.display();
   /*if(joypad.isUpPressed()){
     jugador.move(1);
   }

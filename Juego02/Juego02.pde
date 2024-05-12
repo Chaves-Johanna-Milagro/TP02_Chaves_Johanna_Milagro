@@ -6,7 +6,7 @@ public void setup(){
   size(800,400);
   background(0);
   dado=new Dado();
- 
+  dado.setValor(0);
   dado.setPosicion(new PVector(width/2,height/2));
   
   tablero=new Tablero();
@@ -28,8 +28,10 @@ public void draw(){
 public void keyPressed(){
   if(key=='s'){
       dado.setValor((int)random(1,6));
+      println(valor);
     }
     if(key=='n'){
+     // println(dado);
       //for(int i=0;i<mostrarDados.length;i++){
   //mostrarDados[i].display();
   }

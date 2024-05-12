@@ -24,12 +24,12 @@ this.velocidad=velocidad;
 
 void display(){
   personaje=loadImage("sapo.gif");
-  image(personaje,posicion.x,posicion.y,100,100);
+  image(personaje,posicion.x,posicion.y,50,50);
 }
 void move(int direccion){ 
   switch(direccion){
     case 1:{
-      this.posicion.y-=velocidad.y;  //arriba
+      this.posicion.y-=velocidad.y; //arriba
     break;}
     case 2:{
       this.posicion.y+=velocidad.y;  //abajo
