@@ -1,18 +1,18 @@
 private Jugador jugador;
-private JoyPad joypad;
+//private JoyPad joypad;
 public void setup(){
   size(600,600);
   //background(255);
   jugador=new Jugador();
   jugador.setPosicion(new PVector(width/2,height/2));
   jugador.setVelocidad(new PVector(20,20));
-  joypad=new JoyPad();
+  //joypad=new JoyPad();
   
 }
 public void draw(){
   background(255);
   jugador.display();
-  if(joypad.isUpPressed()){
+  /*if(joypad.isUpPressed()){
     jugador.move(1);
   }
   if(joypad.isDownPressed()){
@@ -23,24 +23,28 @@ public void draw(){
    }
    if(joypad.isRightPressed()){
    jugador.move(4);
-   }
+   }*/
 }
 public void keyPressed(){
 if(key=='w' || keyCode==UP){
-joypad.setUpPressed(true);
+  jugador.move(1);
+//joypad.setUpPressed(true);
 }
 if(key=='s' || keyCode==DOWN){
-joypad.setDownPressed(true);
+  jugador.move(2);
+//joypad.setDownPressed(true);
 }
 if(key=='a' || keyCode==LEFT){
-joypad.setLeftPressed(true);
+  jugador.move(3);
+//joypad.setLeftPressed(true);
 }
 if(key=='d' || keyCode==RIGHT){
-joypad.setRightPressed(true);
+  jugador.move(4);
+//joypad.setRightPressed(true);
 }
 }
 
-public void keyReleased(){
+/*public void keyReleased(){
 if(key=='w'|| keyCode==UP){
   joypad.setUpPressed(false);
 }
@@ -53,4 +57,4 @@ if(key=='a'|| keyCode==LEFT){
 if(key=='d'|| keyCode==RIGHT){
   joypad.setRightPressed(false);
 }
-}
+}*/
