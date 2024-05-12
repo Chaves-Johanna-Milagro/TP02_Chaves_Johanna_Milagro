@@ -1,6 +1,7 @@
 abstract class GameObject{
 PVector posicion;
-PVector velocidad;
+//PVector velocidad;
+PImage personaje;
 abstract void display();
-//abstract void move();
+abstract void move(int direccion);
 }

@@ -1,15 +1,16 @@
-Jugador jugador;
-JoyPad joypad;
+private Jugador jugador;
+private JoyPad joypad;
 public void setup(){
   size(600,600);
-  background(255);
+  //background(255);
   jugador=new Jugador();
   jugador.setPosicion(new PVector(width/2,height/2));
-  jugador.setVelocidad(new PVector(50,50));
+  jugador.setVelocidad(new PVector(20,20));
   joypad=new JoyPad();
   
 }
 public void draw(){
+  background(255);
   jugador.display();
   if(joypad.isUpPressed()){
     jugador.move(1);
@@ -26,11 +27,30 @@ public void draw(){
 }
 public void keyPressed(){
 if(key=='w' || keyCode==UP){
-joypad.setUpPressed(true);}
+joypad.setUpPressed(true);
+}
 if(key=='s' || keyCode==DOWN){
-joypad.setDownPressed(true);}
+joypad.setDownPressed(true);
+}
 if(key=='a' || keyCode==LEFT){
-jugador.move(3);}
+joypad.setLeftPressed(true);
+}
 if(key=='d' || keyCode==RIGHT){
-jugador.move(4);}
+joypad.setRightPressed(true);
+}
+}
+
+public void keyReleased(){
+if(key=='w'|| keyCode==UP){
+  joypad.setUpPressed(false);
+}
+if(key=='s'|| keyCode==DOWN){
+  joypad.setDownPressed(false);
+}
+if(key=='a'|| keyCode==LEFT){
+  joypad.setLeftPressed(false);
+}
+if(key=='d'|| keyCode==RIGHT){
+  joypad.setRightPressed(false);
+}
 }
